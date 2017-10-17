@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="article-description">
-                    <p><?php echo mb_strimwidth($value['news_content'], 0, 50, "..."); ?></p>
+                    <p><?php echo mb_strimwidth($value['news_content'], 0, 150, "..."); ?></p>
                 </div>
 
                 <div class="article-page-link">
