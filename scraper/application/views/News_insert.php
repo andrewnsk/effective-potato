@@ -25,6 +25,11 @@
         </div>
 
         <div class="form-group">
+            <label for="img">URL</label>
+            <?php echo form_input(array('id' => 'img', 'name' => 'img', 'placeholder' => 'https://habrahabr.ru/img/image.png', 'class' => 'form-control')); ?>
+        </div>
+
+        <div class="form-group">
             <label for="news_content">Post content</label>
             <textarea class="form-control" id="news_content" name="news_content" rows="3"></textarea>
         </div>

@@ -19,6 +19,8 @@ class News_insert extends CI_Controller {
 //Validating Mobile no. Field
         $this->form_validation->set_rules('url', 'url', 'required');
 
+        $this->form_validation->set_rules('img', 'img', 'required');
+
 //Validating Address Field
         $this->form_validation->set_rules('news_content', 'news_content', 'required|min_length[1]|max_length[5000]');
 
@@ -33,7 +35,8 @@ class News_insert extends CI_Controller {
                 'counter' => 0,
                 'news_title' => $this->input->post('news_title'),
                 'url' => $this->input->post('url'),
-                'news_content' => $this->input->post('news_content')
+                'news_content' => $this->input->post('news_content'),
+                'img' => $this->input->post('img')
             );
 //Transfering data to Model
             $this->news_insert_model->form_insert($data);
