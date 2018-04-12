@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Migration_Add_news_20171014_1512 extends CI_Migration {
+class Migration_Add_news_20180412_0831 extends CI_Migration {
 
     public function up()
     {
