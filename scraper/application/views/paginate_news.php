@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="article-image">
-                    <img src="#" class="img-fluid">
+                    <img src="<?php echo $value['img']; ?>" class="img-fluid">
                 </div>
 
                 <div class="article-description">
