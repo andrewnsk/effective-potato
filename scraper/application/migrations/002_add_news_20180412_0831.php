@@ -6,38 +6,15 @@ class Migration_Add_news_20180412_0831 extends CI_Migration {
 
     public function up()
     {
-        $this->dbforge->add_field(array(
-            'news_id' => array(
-                'type' => 'INT',
-                'constraint' => 6,
-                'unsigned' => TRUE,
-                'auto_increment' => TRUE
-            ),
-            'counter' => array(
-                'type' => 'INT',
-                'constraint' => 5,
-                'unsigned' => TRUE,
-                'auto_increment' => FALSE
-            ),
-            'news_title' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '500',
-            ),
-            'url' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '500',
-            ),
+        $fields = array(
+
             'img' => array(
                 'type' => 'VARCHAR',
                 'constraint' => '500',
-            ),
-            'news_content' => array(
-                'type' => 'TEXT',
-                'null' => TRUE,
-            ),
-        ));
-        $this->dbforge->add_key('news_id', TRUE);
-        $this->dbforge->create_table('news');
+            )
+
+        );
+        $this->dbforge->add_column('news', $fields);
     }
 
     public function down()
