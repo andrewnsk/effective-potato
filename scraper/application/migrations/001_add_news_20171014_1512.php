@@ -27,6 +27,10 @@ class Migration_Add_news_20171014_1512 extends CI_Migration {
                 'type' => 'VARCHAR',
                 'constraint' => '500',
             ),
+            'img' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '500',
+            ),
             'news_content' => array(
                 'type' => 'TEXT',
                 'null' => TRUE,
