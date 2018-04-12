@@ -20,9 +20,11 @@
                     </p>
                 </div>
 
-                <div class="article-image">
-                    <img src="<?php echo $value['img']; ?>" class="img-fluid">
-                </div>
+                <?php if (isset($value['img'])) {
+                    echo '<div class="article-image">';
+                    echo '<img src="'.$value['img'].'" class="img-fluid">';
+                    echo '</div>';
+                }; ?>
 
                 <div class="article-description">
                     <p><?php echo mb_strimwidth($value['news_content'], 0, 150, "..."); ?></p>
